@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Water Supply</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      li{
+        padding: 2px;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+</style>
+
+<script>
+    function food() {
+        window.prompt("Choose from menu \n1. Biriyani\n2. .... \n3. .... \n4. ....");
+        window.alert("order received");
+    }
+
+    function roomService() {
+        window.prompt("Choose your service \n1. Room Cleaning\n2. Change Sheets \n3. .... \n4. ....");
+        window.alert("Staff will be sent");
+    }
+
+    function spa() {
+        window.prompt("Choose your spa \n1. Massage\n2. Swedish Massage \n3. Manicure \n4. ....");
+        window.alert("Arriving in 5 minutes");
+    }
+
+    function emergency() {
+        window.confirm("Use only in case of Emergency");
+        window.alert("Sending immediate assistance");
+    }
+</script>
+</head>
+
+<header> 
+  <nav class="navbar navbar-light bg-light justify-content-between"> 
+    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+          <p class="media-body pb-3 mb-0 small lh-125 "><strong class="d-block text-gray-dark"></strong> Room: 1432</p>
+          <form class="form-inline">
+            <a class="btn btn-outline-primary" href="./login.html">Logout</a>
+          </form>
+    </nav>
+</header>
+
+<body>
+
+
+
+
+<main role="main">
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+
+    
+    <div class="col-md-2 p-sm-2 mx-auto my-2">
+      <a class="btn btn-outline-success" href="#" onclick="food()">Food</a>
+    </div>
+    <div class="col-sm-2 p-sm-2 mx-auto my-2">
+
+      <a class="btn btn-outline-danger" href="#" onclick="roomService()">Room Service</a>
+
+    </div>
+    <div class="col-sm-2 p-sm-2 mx-auto my-2">
+
+      <a class="btn btn-outline-success" href="#" onclick="spa()">Spa</a>
+
+    </div>
+    <div class="col-sm-2 p-sm-2 mx-auto my-2">
+
+      <a class="btn btn-outline-danger" href="#" onclick="emergency()">Emergency</a>
+    </div>
+    <!-- <a class="btn btn-outline-success" href="/book2.html"> Book Later</a> -->
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+
+<!--  -->
+<br>
+
+<div class="container">
+    <div class="row sm-12">
+      <div class="col-sm-12">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Cart</h3><br>
+            <ul>
+              <li><s>RoomService: new sheets</s>&nbsp;<a class="btn btn-outline-success" href="#">completed</a><br> <s><u>8:30 A.M</u></s> </li>
+              
+                <li>RoomService: clean floor&nbsp;<a class="btn btn-outline-danger" href="#">del</a><br> <u>8:30 A.M</u>   </li>
+                <li>Food: tea (2) &nbsp;<a class="btn btn-outline-danger" href="#">del</a> <br><u>8:30 A.M</u> </li>
+                <li>Food: biscuit (2) &nbsp;<a class="btn btn-outline-danger" href="#">del</a><br><u>8:30 A.M</u>  </li>
+                <li>Food: biriyani &nbsp;<a class="btn btn-outline-danger" href="#">del</a> <br> <u>1:00 P.M</u>  </li>
+            </ul>
+            <br>
+          </div>
+          <div class="col- d-none  d-sm-block">
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</main>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+</html>
